@@ -7,52 +7,56 @@
   <title>Trip to Space</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/superhero/bootstrap.min.css">
 </head>
 
 <body>
 <div class="container">
-  <nav>
-    <ul>
-      <li><a href="index.html">Trip Information</a></li>
-      <li><a href="our_mission.html">Our Mission</a></li>
-      <li><a href="simpson_collaboration.html">Collaboration with Simpson College</a></li>
-      <li><a href="expenses.html">Expenses</a></li>
-      <li><a href="undergraduate_aerospace_engineering_major.html">Undergraduate Aerospace Engineering Major</a></li>
-	    <li><a href="why_the_moon.html">Why the Moon</a></li>
-	    <li><a href="sponsors.html">Sponsors</a></li>
-	    <li><a href="flight_crew.html">Flight Crew</a></li>
-	    <li><a href="ship_info.html">Ship Information</a></li>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Trip Information</a></li>
+        <li class="nav-item"><a class="nav-link" href="our_mission.html">Our Mission</a></li>
+        <li class="nav-item"><a class="nav-link" href="simpson_collaboration.html">Collaboration with Simpson College</a></li>
+        <li class="nav-item"><a class="nav-link" href="expenses.html">Expenses</a></li>
+        <li class="nav-item"><a class="nav-link" href="undergraduate_aerospace_engineering_major.html">Undergraduate Aerospace Engineering Major</a></li>
+        <li class="nav-item"><a class="nav-link" href="why_the_moon.html">Why the Moon</a></li>
+        <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
+        <li class="nav-item"><a class="nav-link active" href="flight_crew.html">Flight Crew</a></li>
+        <li class="nav-item"><a class="nav-link" href="ship_info.html">Ship Information</a></li>
     </ul>
-  </nav>
+    </div>
+</nav>
 
-<h1 class="standout">Meet The Crew</h1>
+
+<h1>Meet The Crew</h1>
 
 <p>Meet the people who make this trip possible!</p>
 
 <br>
 
-<h2 class="standout">Spaceship Designers</h2>
+<h2>Spaceship Designers</h2>
 
 <p>These people are responsible for design and testing of our state of the art spaceship "Moon Phaser". We are extremely proud to have these exceptional indiviudals on our team. </p>
 
-<table>
-  <tr>
+<table class="table">
+  <tr class="table-primary">
     <th>First name</th>
     <th>Last name</th> 
     <th>Age</th>
   </tr>
-  <tr>
+  <tr class="table-dark">
     <td>Ean</td>
     <td>Warrick</td>
     <td>18</td>
   </tr>
-  <tr>
+  <tr class="table-dark">
     <td>Ahmed</td>
     <td>Musa</td>
     <td>20</td>
   </tr>
-  <tr>
+  <tr class="table-dark">
     <td>Oleg</td>
     <td>Nochvey</td>
     <td>21</td>
@@ -61,28 +65,28 @@
 
 <br>
 
-<h2 class="standout">Flight Crew</h2>
+<h2>Flight Crew</h2>
 
 <p> These individuals are well-known pioneers of spaceflight and hail from all across the United States. </p>
 
 <p>
-<table>
-  <tr>
+<table class="table">
+  <tr class="table-primary">
     <th>First name</th>
     <th>Last name</th> 
     <th>Age</th>
   </tr>
-  <tr>
+  <tr class="table-dark">
     <td>John</td>
     <td>Doe</td>
     <td>24</td>
   </tr>
-  <tr>
+  <tr class=table-dark>
     <td>Kelly</td>
     <td>Scott</td>
     <td>52</td>
   </tr>
-  <tr>
+  <tr class=table-dark>
     <td>Jimothy</td>
     <td>Williams</td>
     <td>35</td>
@@ -92,32 +96,29 @@
 <p>Want to be part of the NASE team? Sign 
 up for job applications! We'll send you 
 the jobs that are available via our weekly newsletter!</p>
-<form>
-  <fieldset>
-    <legend>Sign up for job applications</legend>
-    First Name:
-    <br>
-    <input type="text" name="firstname">
-    <br>
-    Last Name:
-    <br>
-    <input type="text" name="lastname">
-    <br>
-    Email:
-    <br>
-    <input type="text" name="email">
-    <br>
-    <br>
-    <input type="submit" name="Submit">
-  </fieldset>
-</form>
 
+<form action="/action_page.php">
+  <h3>Sign up for job applications</h3>
+  <div class="form-group">
+    <label for="firstname">First Name:</label>
+    <input type="text" class="form-control" id="firstname">
+  </div>
+  <div class="form-group">
+    <label for="lastname">Last Name:</label>
+    <input type="text" class="form-control" id="lastname">
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-</div class="container">
+</div>
 
 </body>
 </html>
